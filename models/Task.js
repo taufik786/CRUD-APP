@@ -5,10 +5,14 @@ const newTaskSchema = new Schema({
     type: String,
     required: true
   },
-  description: {
+  job: {
+    type: String,
+    required: true
+  },
+  address: {
     type: String,
     required: true
   },
 })
 
-module.exports = model('Task', newTaskSchema);
+module.exports = model('TaskCollections', newTaskSchema);
